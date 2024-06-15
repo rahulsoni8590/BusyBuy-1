@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .main{
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: auto;
+            background-color: lightcoral;
+        }
+
+        .side{
+            display: flex;
+            align-items: center;
+            height: auto;
+            width: 12%;
+            padding: 5px;
+            background-color: lightgreen;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .filtercontainer{
+            position: fixed;
+            height: 35vh;
+            width: 10vw;
+            top: 35%;
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        .filter{
+            text-align: center;
+        }
+
+        .category{
+            padding: 5px;
+        }
+
+        .category h1{
+            text-align: center;
+        }
+
+        ul{
+            list-style-type:none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="side">
+            <div class="filtercontainer">
+                <div class="filter">
+                    <h1>Filter</h1>
+                    <label for="filter">Price: </label>
+                    <input type="range" name="filter" id="filter" min="1" max="50000">
+                </div>
+                <div class="category">
+                    <h1>category</h1>
+                    <ul >
+                        <li>
+                            <input type="checkbox" name="men" id="men">
+                            <label for="men">Men</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="women" id="women">
+                            <label for="women">Women</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="jewelery" id="jewelery">
+                            <label for="jewelery">Jewelery</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="electronics" id="electronics">
+                            <label for="electronics">Electronics</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+.main{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* background-color: lightcoral; */
+    margin-top: 15px;
+    /* border: 2px solid black; */
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+
+}
+
+.searchbar input{
+    height: 70px;
+    width: 500px;
+    border: 2px solid rgb(128, 107, 107);
+    border-radius: 15px;
+    background-color: rgb(226, 230, 235);
+}
+
+
+.searchbar input::placeholder{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 16%;
+    justify-content: space-around;
+    width: 82%;
+    margin: 3px;
+    box-shadow: -5px -5px 5px lightgray;
+    /* border: 6px solid rgb(189, 30, 30); */
+}
+
+
+.product{
+    /* background-color: rgba(228, 230, 232, 0.962); */
+    height: 550px;
+    aspect-ratio: 2/3;
+    padding: 5px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 5px rgba(228, 230, 232, 0.962);
+}
+
+.imgcontainer{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    /* border: 2px solid black; */
+    margin: auto;
+}
+
+img{
+    height: 98%;
+    width: 98%;
+    object-fit:contain;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    left: 12px;
+}
+
+.quantity{
+    /* border: 2px solid red; */
+    font-size: 1.5rem;
+    font-weight:600;
+    position: relative;
+    left: 12px;
+    margin: 3px;
+}
+
+.addbutton{
+    height: 50px;
+    background-color: yellow;
+    margin: 3px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.addbutton:hover{
+    background-color: rgb(255, 255, 31);
+    font-size: 1.3rem;
+}

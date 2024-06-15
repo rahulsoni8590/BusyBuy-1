@@ -1,0 +1,122 @@
+
+.main{
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(203, 190, 190); */
+}
+.purchase{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 200px;
+    height: 30vh;
+    width: 15vw;
+    padding: 5px;
+    background-color: rgb(200, 201, 249); 
+ }
+
+.priceDetail{
+    font-weight: bold;
+    font-size: 1.2rem;
+} 
+
+.price{
+    font-weight: bold;
+    font-size: 1.2rem;
+} 
+.placeOrder{
+    background-color: rgb(237, 70, 70);
+    height: 50px;
+    width: 100px;
+    border: none;
+    position: relative;
+    left: -3px;
+}
+
+.products{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    top: 15px;
+    left: 300px;
+    height: auto;
+    width: 80%;
+    /* background-color: lightgreen; */
+}
+
+.product{
+    background-color: rgb(210, 209, 209);
+    height: 500px;
+    aspect-ratio: 2/3;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgcontainer{
+    height: 350px;
+    width: 90%;
+    /* border: 2px solid black; */
+    margin: auto;
+}
+
+img{
+    object-fit: contain;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    left: 12px;
+}
+
+.quantity{
+    /* border: 2px solid red; */
+    width: 96%;
+    display: flex;
+    justify-content:space-around;
+    align-items: baseline;
+    margin: 3px;
+}
+
+.quantity div{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.quantity button{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.quantity button:hover{
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.revbutton{    
+    margin: auto;
+    background-color: rgb(222, 104, 104);
+    width: 90%;
+    height: 50px;
+    margin: 3px;
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+
+}
