@@ -89,11 +89,12 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     dispatch({ type: "LOADING" });
     const unsubscribe = onAuthStateChanged(auth, async (currUser) => {
-      // if (currUser) {
-      //   const docSnap = await getDoc(doc(db, "users", currUser.email));
-      //   const user = docSnap.data();
-      //   setUser(user);
-      // }
+      console.log(unsubscribe)
+      if (currUser) {
+        const docSnap = await getDoc(doc(db, "users", currUser.email));
+        const user = docSnap.data();
+        setUser(user);
+      }
 
     });
     return unsubscribe;
